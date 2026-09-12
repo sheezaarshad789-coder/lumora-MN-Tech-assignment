@@ -1,160 +1,438 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumora | Fashion & Lifestyle</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumora | Fashion & Lifestyle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="main-nav">
+        <div class="nav-cont">
+            <a href="#" class="logo"><i class="fa-solid fa-asterisk logo-icon"></i> LUMORA</a>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="logo" href="#top"><span class="logo-mark">✤</span><span>LUMORA</span></a>
-    <nav>
-      <a href="#shop">Shop</a>
-      <a href="#categories">Collections</a>
-      <a href="#new-arrivals">New Arrivals</a>
-      <a href="#deals">Deals</a>
-      <a href="#about">About</a>
-    </nav>
-    <div class="actions">
-      <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <button aria-label="Account"><i class="fa-regular fa-user"></i></button>
-      <button class="cart" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><b>2</b></button>
-    </div>
-  </div>
-</header>
+            <div class="nav-actions-mobile">
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-<main id="top">
-  <section class="hero" id="shop">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <img class="hero-botanical" src="images/flowerillsuatrion-removebg-preview.png" alt="" aria-hidden="true">
-        <div class="season"><span class="line-flower">⌁</span><small>NEW SEASON COLLECTION</small></div>
-        <h1>Live Beautifully.<br><em>Shop Effortlessly.</em></h1>
-        <p>Curated styles, quality you love,<br>delivered to your door.</p>
-        <a class="pill-btn" href="#new-arrivals">Shop Now <span>→</span></a>
-        <div class="benefits">
-          <div><span class="benefit-icon ship"><i class="fa-solid fa-truck"></i></span><strong>Free Shipping</strong><small>On orders over $50</small></div>
-          <div><span class="benefit-icon secure"><i class="fa-solid fa-shield-halved"></i></span><strong>Secure Payment</strong><small>100% protected</small></div>
-          <div><span class="benefit-icon return"><i class="fa-solid fa-arrow-rotate-left"></i></span><strong>Easy Returns</strong><small>30-day return</small></div>
+                <div class="nav-icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">2</span></a>
+                </div>
+            </div>
+
+            <nav class="nav-link">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#category">Collections</a></li>
+                    <li><a href="#products">New Arrivals</a></li>
+                    <li><a href="#sale">Deals</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div class="hero-visual" aria-label="Lumora seasonal collection">
-        <img src="images/hero img.png" alt="Seasonal fashion collection">
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="categories" id="categories">
-    <div class="container section-box">
-      <div class="section-head"><h2>Shop by Category</h2><a href="#categories">Browse all <span>→</span></a></div>
-      <div class="category-grid">
-        <a class="category" href="#women"><img src="images/women.jpg"><strong>Women</strong><small>120+ items</small></a>
-        <a class="category" href="#men"><img src="images/mens.jpg"><strong>Men</strong><small>98+ items</small></a>
-        <a class="category" href="#home"><img src="images/home and livng.jpg"><strong>Home &amp; Living</strong><small>150+ items</small></a>
-        <a class="category" href="#beauty"><img src="images/beauty.jpg"><strong>Beauty</strong><small>80+ items</small></a>
-        <a class="category" href="#accessories"><img src="images/acessories.jpg"><strong>Accessories</strong><small>70+ items</small></a>
-      </div>
-    </div>
-  </section>
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="sub-tag">
+                    <i class="fa-solid fa-leaf leaf-icon"></i>
+                    <span>NEW SEASON COLLECTION</span>
+                </div>
 
-  <section class="sale" id="deals">
-    <div class="container"><a class="sale-image" href="#new-arrivals" aria-label="Explore spring sale"></a></div>
-  </section>
+                <h1 class="hero-title">
+                    Live Beautifully.<br>
+                    <span class="italic-text">Shop Effortlessly.</span>
+                </h1>
 
-  <section class="arrivals" id="new-arrivals">
-    <div class="container">
-      <div class="section-head arrivals-head"><h2>New Arrivals</h2><a href="#new-arrivals">View all <span>→</span></a></div>
-      <div class="products">
-        <article class="product"><div class="product-img"><img src="images/linen shirt.jpg"><button aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button></div><strong>Linen Shirt</strong><span>$49.00</span></article>
-        <article class="product"><div class="product-img"><img src="images/sneakers.jpg"><button aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button></div><strong>Minimal Sneakers</strong><span>$79.00</span></article>
-        <article class="product"><div class="product-img"><img src="images/candle.jpg"><button aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button></div><strong>Scented Candle</strong><span>$26.00</span></article>
-        <article class="product"><div class="product-img"><img src="images/hat.jpg"><button aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button></div><strong>Straw Hat</strong><span>$35.00</span></article>
-        <article class="product"><div class="product-img"><img src="images/gold hoops.jpg"><button aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button></div><strong>Gold Hoops</strong><span>$19.00</span></article>
-      </div>
-    </div>
-  </section>
+                <p class="hero-description">
+                    Curated styles, quality you love,<br>
+                    delivered to your door.
+                </p>
 
-  <section class="newsletter">
-    <div class="container newsletter-inner">
-      <div class="mail-icon"><i class="fa-regular fa-envelope"></i></div>
-      <div class="newsletter-copy"><strong>Join the Lumora Circle</strong><p>Be the first to know about new arrivals,<br>exclusive offers, and style inspiration.</p></div>
-      <form><input type="email" placeholder="Enter your email" required><button>Subscribe</button></form>
-    </div>
-  </section>
+                <a href="#" class="btn-shop-now">
+                    Shop Now <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
 
-  <section class="trust" id="about">
-    <div class="container trust-grid">
-      <div><i class="fa-regular fa-gem"></i><strong>Quality You Can Trust</strong><small>Premium products<br>handpicked for you.</small></div>
-      <div><i class="fa-solid fa-headphones"></i><strong>Customer Support</strong><small>We're here to help,<br>24/7.</small></div>
-      <div><i class="fa-regular fa-star"></i><strong>Loved by Thousands</strong><small>Join our happy<br>customer community.</small></div>
-      <div><i class="fa-solid fa-globe"></i><strong>Sustainable Choice</strong><small>Thoughtful shopping<br>for a better tomorrow.</small></div>
-    </div>
-  </section>
-</main>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-truck"></i></div>
+                        <div class="feature-text">
+                            <strong>Free Shipping</strong>
+                            <p>On orders over $50</p>
+                        </div>
+                    </div>
 
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+                        <div class="feature-text">
+                            <strong>Secure Payment</strong>
+                            <p>100% protected</p>
+                        </div>
+                    </div>
 
-<footer class="footer" id="footer">
-  <div class="container footer-grid">
-    <section class="footer-brand" aria-label="Lumora brand">
-      <a class="footer-logo" href="#top">LUMORA</a>
-      <p>Curated fashion and lifestyle pieces<br>designed for beautiful everyday living.</p>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                        <div class="feature-text">
+                            <strong>Easy Returns</strong>
+                            <p>30-day return</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="feature-text">
+                            <strong>24/7 Support</strong>
+                            <p>We're here to help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="shape-pink-circle"></div>
+                <div class="decorative-leaves">
+                    <i class="fa-solid fa-leaf leaf-1"></i>
+                    <i class="fa-solid fa-leaf leaf-2"></i>
+                </div>
+
+                <img src="images/hero img.png" alt="Model in Green Dress" class="model-img">
+
+                <div class="floating-product-card">
+                    <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <div class="card-img-wrapper">
+                        <img src="images/bag.jpg" alt="Luxe Handbag">
+                    </div>
+                    <div class="card-details">
+                        <h3 class="product-title">Luxe Handbag</h3>
+                        <p class="product-price">$129.00</p>
+                        <div class="card-actions">
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-plus">+</button>
+                        </div>
+                        <div class="card-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="footer-column" aria-labelledby="company-title">
-      <h2 id="company-title">Company</h2>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#our-story">Our Story</a></li>
-        <li><a href="#careers">Careers</a></li>
-      </ul>
+    <section class="categories-section" id="category">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <a href="#" class="browse-all">Browse all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/women.jpg" alt="Women Category">
+                    </div>
+                    <h3 class="category-name">Women</h3>
+                    <span class="category-count">120+ items</span>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/mens.jpg" alt="Men Category">
+                    </div>
+                    <h3 class="category-name">Men</h3>
+                    <span class="category-count">98+ items</span>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/home and livng.jpg" alt="Home & Living Category">
+                    </div>
+                    <h3 class="category-name">Home & Living</h3>
+                    <span class="category-count">150+ items</span>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/beauty.jpg" alt="Beauty Category">
+                    </div>
+                    <h3 class="category-name">Beauty</h3>
+                    <span class="category-count">80+ items</span>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/acessories.jpg" alt="Accessories Category">
+                    </div>
+                    <h3 class="category-name">Accessories</h3>
+                    <span class="category-count">70+ items</span>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section class="footer-column" aria-labelledby="service-title">
-      <h2 id="service-title">Customer Service</h2>
-      <ul>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#shipping">Shipping</a></li>
-        <li><a href="#returns">Returns</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
+    <section class="promo-section">
+        <div class="section-container">
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <span class="promo-subtag">
+                        <i class="fa-solid fa-sparkles"></i> LIMITED TIME OFFER
+                    </span>
+                    <h2 class="promo-title">Spring Sale is Live!</h2>
+                    <p class="promo-desc">Enjoy up to 40% off on<br>selected collections.</p>
+                    <a href="#" class="btn-explore">
+                        Explore Deals <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="discount-badge">
+                    <span class="badge-sub">UP TO</span>
+                    <span class="badge-percent">40%</span>
+                    <span class="badge-sub">OFF</span>
+                </div>
+
+                <div class="promo-image-wrapper">
+                    <img src="images/sale image.jpg" alt="Spring Sale Banner">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="footer-column" aria-labelledby="shop-title">
-      <h2 id="shop-title">Shop</h2>
-      <ul>
-        <li><a href="#women">Women</a></li>
-        <li><a href="#men">Men</a></li>
-        <li><a href="#home">Home &amp; Living</a></li>
-        <li><a href="#beauty">Beauty</a></li>
-        <li><a href="#accessories">Accessories</a></li>
-      </ul>
+    <section class="new-arrivals-section" id="products">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <a href="#" class="browse-all">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="images/linen shirt.jpg" alt="Linen Shirt">
+                    </div>
+                    <h3 class="product-title">Linen Shirt</h3>
+                    <p class="product-price">$49.00</p>
+                    <div class="color-dots">
+                        <span class="c-dot active" style="background-color: #556b2f;"></span>
+                        <span class="c-dot" style="background-color: #d2b48c;"></span>
+                        <span class="c-dot" style="background-color: #ffffff;"></span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="images/sneakers.jpg" alt="Minimal Sneakers">
+                    </div>
+                    <h3 class="product-title">Minimal Sneakers</h3>
+                    <p class="product-price">$79.00</p>
+                    <div class="color-dots">
+                        <span class="c-dot active" style="background-color: #f5f5f5;"></span>
+                        <span class="c-dot" style="background-color: #8b5a2b;"></span>
+                        <span class="c-dot" style="background-color: #111111;"></span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="images/candle.jpg" alt="Scented Candle">
+                    </div>
+                    <h3 class="product-title">Scented Candle</h3>
+                    <p class="product-price">$26.00</p>
+                    <div class="color-dots">
+                        <span class="c-dot active" style="background-color: #fffdd0;"></span>
+                        <span class="c-dot" style="background-color: #e6e6fa;"></span>
+                        <span class="c-dot" style="background-color: #ffe4e1;"></span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="images/hat.jpg" alt="Straw Hat">
+                    </div>
+                    <h3 class="product-title">Straw Hat</h3>
+                    <p class="product-price">$35.00</p>
+                    <div class="color-dots">
+                        <span class="c-dot active" style="background-color: #e3a857;"></span>
+                        <span class="c-dot" style="background-color: #111111;"></span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="images/gold hoops.jpg" alt="Gold Hoops">
+                    </div>
+                    <h3 class="product-title">Gold Hoops</h3>
+                    <p class="product-price">$19.00</p>
+                    <div class="color-dots">
+                        <span class="c-dot active" style="background-color: #ffd700;"></span>
+                        <span class="c-dot" style="background-color: #c0c0c0;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="footer-column social-column" aria-labelledby="social-title">
-      <h2 id="social-title">Social</h2>
-      <ul>
-        <li><a href="#instagram" aria-label="Lumora Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-        <li><a href="#facebook" aria-label="Lumora Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook</a></li>
-        <li><a href="#pinterest" aria-label="Lumora Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>Pinterest</a></li>
-      </ul>
+    <section class="newsletter-section">
+        <div class="section-container">
+            <div class="newsletter-card">
+                <div class="newsletter-info">
+                    <div class="mail-icon-box">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="newsletter-text">
+                        <h3>Join the Lumora Circle</h3>
+                        <p>Be the first to know about new arrivals, exclusive offers, and style inspiration.</p>
+                    </div>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
     </section>
-  </div>
-  <div class="footer-bottom">
-    <div class="container"><p>&copy; 2026 Lumora. All rights reserved.</p></div>
-  </div>
-</footer>
 
-<script>
-  document.querySelectorAll('.product button, .actions button').forEach(btn => {
-    btn.addEventListener('click', () => btn.classList.toggle('active'));
-  });
-</script>
+    <section class="trust-values-section">
+        <div class="section-container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="fa-regular fa-star trust-icon"></i>
+                    <div>
+                        <h4>Quality You Can Trust</h4>
+                        <p>Premium products crafted with care.</p>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <i class="fa-solid fa-headset trust-icon"></i>
+                    <div>
+                        <h4>Customer Support</h4>
+                        <p>We're here to help, whenever you need.</p>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <i class="fa-regular fa-heart trust-icon"></i>
+                    <div>
+                        <h4>Loved by Thousands</h4>
+                        <p>Join our happy customer community.</p>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <i class="fa-solid fa-plant-wilt trust-icon"></i>
+                    <div>
+                        <h4>Sustainable Choice</h4>
+                        <p>Thoughtful shopping for a better planet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLink = document.querySelector('.nav-link');
+
+        if (menuToggle && navLink) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navLink.classList.toggle('active');
+                menuToggle.classList.toggle('open', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navLink.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navLink.classList.remove('active');
+                    menuToggle.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+
+    <footer class="dark-footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo">
+                        <i class="fa-solid fa-asterisk"></i> LUMORA
+                    </a>
+                    <p class="brand-tagline">Timeless style. Thoughtful living.<br>Made for every you.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Home &amp; Living</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping &amp; Delivery</a></li>
+                        <li><a href="#">Returns &amp; Refunds</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col payment-col">
+                    <h4>Payment Methods</h4>
+                    <div class="payment-badges">
+                        <span class="pay-badge visa">VISA</span>
+                        <span class="pay-badge mc"><i class="fa-brands fa-cc-mastercard"></i></span>
+                        <span class="pay-badge paypal">PayPal</span>
+                        <span class="pay-badge amex">AMEX</span>
+                    </div>
+                    <div class="security-badges">
+                        <span class="sec-badge"><i class="fa-solid fa-shield"></i> SSL SECURE</span>
+                        <span class="sec-badge"><i class="fa-solid fa-lock"></i> McAfee SECURE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumora. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
